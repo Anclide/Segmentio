@@ -188,19 +188,19 @@ class SegmentioCell: UICollectionViewCell {
         )
         let segmentTitleLabelTrailingConstraint = NSLayoutConstraint(
             item: segmentTitleLabel,
-            attribute: .trailing,
+            attribute: .right,
             relatedBy: .equal,
             toItem: containerView,
-            attribute: .trailingMargin,
+            attribute: .right,
             multiplier: 1.0,
             constant: 0
         )
         let segmentTitleLabelLeadingConstraint = NSLayoutConstraint(
             item: segmentTitleLabel,
-            attribute: .leading,
+            attribute: .left,
             relatedBy: .equal,
             toItem: containerView,
-            attribute: .leadingMargin,
+            attribute: .left,
             multiplier: 1.0,
             constant: 0
         )
@@ -234,10 +234,10 @@ class SegmentioCell: UICollectionViewCell {
         let segmentImageViewLeadingConstraint =
             NSLayoutConstraint(
                 item: segmentImageView,
-                attribute: .leading,
+                attribute: .left,
                 relatedBy: .equal,
                 toItem: imageContainerView,
-                attribute: .leading,
+                attribute: .left,
                 multiplier: 1,
                 constant: 0
         )
@@ -245,10 +245,10 @@ class SegmentioCell: UICollectionViewCell {
         let segmentImageViewTrailingConstraint =
             NSLayoutConstraint(
                 item: segmentImageView,
-                attribute: .trailing,
+                attribute: .right,
                 relatedBy: .equal,
                 toItem: imageContainerView,
-                attribute: .trailing,
+                attribute: .right,
                 multiplier: 1,
                 constant: 0
         )
