@@ -35,7 +35,7 @@ final class SegmentioCellWithImageAfterLabel: SegmentioCell {
         NSLayoutConstraint.activate(segmentImageViewVerticalConstraint)
         
         let contentViewHorizontalConstraints = NSLayoutConstraint.constraints(
-            withVisualFormat: "|-[containerView]-[imageContainerView(labelHeight)]-|",
+            withVisualFormat: "|-0-[containerView]-0-[imageContainerView(labelHeight)]-0-|",
             options: [.alignAllCenterY],
             metrics: metrics,
             views: views)
