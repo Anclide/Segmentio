@@ -35,11 +35,15 @@ open class Segmentio: UIView {
     }
     
     open var valueDidChange: SegmentioSelectionCallback?
+    open var valueDidNotChange: SegmentioSelectionCallback?
     open var selectedSegmentioIndex = -1 {
         didSet {
             if selectedSegmentioIndex != oldValue {
                 reloadSegmentio()
                 valueDidChange?(self, selectedSegmentioIndex)
+            } else {
+                //reloadSegmentio()
+                 valueDidNotChange?(self, selectedSegmentioIndex)
             }
         }
     }
